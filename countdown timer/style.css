@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, yellow, red);
+  color: white;
+  display: flex;
+  flex-direction: column; /* Added to stack h1 and timer vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  color: darkblue;
+  text-align: center;
+  margin: 0;
+}
+
+#timer {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#timer div {
+  background: green;
+  padding:30px;
+  border-radius: 10px;
+  text-align: center; /* Ensures content inside each box is centered */
+  color: white;
+}
+
+#timer span {
+  font-size: 30px;
+  display: block;
+}
+
+#timer small {
+  font-size: 0.9rem;
+  color: #ccc;
+  display: block;  /* Ensures it goes on its own line below the number */
+  margin-top: 5px;
+}
